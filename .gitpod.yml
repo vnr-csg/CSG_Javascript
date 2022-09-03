@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - name: IF server
+    command: python3 -m http.server 8080
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: true
+    addComment: false
